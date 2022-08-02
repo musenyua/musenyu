@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>设备迁移 · GitBook</title>
+        <title>紧急模式 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="kuai-shou-bu-shu.html" />
+    <link rel="next" href="feng-shan-ipmi.html" />
     
     
-    <link rel="prev" href="../qi-niu-xiang-guan.html" />
+    <link rel="prev" href="../yi-chang-chu-li.html" />
     
 
     </head>
@@ -142,9 +142,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.4.1" data-path="she-bei-qian-yi.html">
+        <li class="chapter " data-level="1.4.1" data-path="../qi-niu-xiang-guan/she-bei-qian-yi.html">
             
-                <a href="she-bei-qian-yi.html">
+                <a href="../qi-niu-xiang-guan/she-bei-qian-yi.html">
             
                     
                     设备迁移
@@ -155,9 +155,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="kuai-shou-bu-shu.html">
+        <li class="chapter " data-level="1.4.2" data-path="../qi-niu-xiang-guan/kuai-shou-bu-shu.html">
             
-                <a href="kuai-shou-bu-shu.html">
+                <a href="../qi-niu-xiang-guan/kuai-shou-bu-shu.html">
             
                     
                     快手部署
@@ -187,9 +187,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../yi-chang-chu-li/jin-ji-mo-shi.html">
+        <li class="chapter active" data-level="1.5.1" data-path="jin-ji-mo-shi.html">
             
-                <a href="../yi-chang-chu-li/jin-ji-mo-shi.html">
+                <a href="jin-ji-mo-shi.html">
             
                     
                     紧急模式
@@ -200,9 +200,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../yi-chang-chu-li/feng-shan-ipmi.html">
+        <li class="chapter " data-level="1.5.2" data-path="feng-shan-ipmi.html">
             
-                <a href="../yi-chang-chu-li/feng-shan-ipmi.html">
+                <a href="feng-shan-ipmi.html">
             
                     
                     风扇IPMI
@@ -248,7 +248,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >设备迁移</a>
+        <a href=".." >紧急模式</a>
     </h1>
 </div>
 
@@ -263,11 +263,15 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="&#x4E03;&#x725B;&#x8FC1;&#x79FB;&#x811A;&#x672C;">&#x4E03;&#x725B;&#x8FC1;&#x79FB;&#x811A;&#x672C;</h3>
-<pre><code>wget https://download.niulinkcloud.com/install/installv2.sh &amp;&amp; sh installv2.sh
-</code></pre><h3 id="&#x67E5;&#x770B;machine-id">&#x67E5;&#x770B;machine-id</h3>
-<pre><code>ps -aux | grep ops-agent
-</code></pre>
+                                <ol>
+<li>&#x8F93;&#x5165;&#x5BC6;&#x7801;&#xFF0C;&#x8FDB;&#x5165;&#x7D27;&#x6025;&#x6A21;&#x5F0F;</li>
+<li><code>mount -o remount,rw /</code></li>
+<li>&#x628A;&#x7CFB;&#x7EDF;&#x76D8;&#x7684;&#x4E24;&#x4E2A;&#x6302;&#x8F7D;&#x70B9;&#x4EE5;&#x5916;&#x7684;&#x6302;&#x8F7D;&#x70B9;&#x90FD;#&#x6CE8;&#x91CA;&#x6389;&#xFF0C;&#x4FDD;&#x5B58;&#x9000;&#x51FA;<pre><code>vim /etc/fstab
+</code></pre></li>
+<li>&#x91CD;&#x542F;&#x8BBE;&#x5907;<pre><code>reboot
+</code></pre></li>
+</ol>
+
                                 
                                 </section>
                             
@@ -294,12 +298,12 @@
 
             
                 
-                <a href="../qi-niu-xiang-guan.html" class="navigation navigation-prev " aria-label="Previous page: 七牛相关">
+                <a href="../yi-chang-chu-li.html" class="navigation navigation-prev " aria-label="Previous page: 异常处理">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="kuai-shou-bu-shu.html" class="navigation navigation-next " aria-label="Next page: 快手部署">
+                <a href="feng-shan-ipmi.html" class="navigation navigation-next " aria-label="Next page: 风扇IPMI">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -310,7 +314,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"设备迁移","level":"1.4.1","depth":2,"next":{"title":"快手部署","level":"1.4.2","depth":2,"path":"qi-niu-xiang-guan/kuai-shou-bu-shu.md","ref":"qi-niu-xiang-guan/kuai-shou-bu-shu.md","articles":[]},"previous":{"title":"七牛相关","level":"1.4","depth":1,"path":"qi-niu-xiang-guan.md","ref":"qi-niu-xiang-guan.md","articles":[{"title":"设备迁移","level":"1.4.1","depth":2,"path":"qi-niu-xiang-guan/she-bei-qian-yi.md","ref":"qi-niu-xiang-guan/she-bei-qian-yi.md","articles":[]},{"title":"快手部署","level":"1.4.2","depth":2,"path":"qi-niu-xiang-guan/kuai-shou-bu-shu.md","ref":"qi-niu-xiang-guan/kuai-shou-bu-shu.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"qi-niu-xiang-guan/she-bei-qian-yi.md","mtime":"2022-08-02T02:38:31.009Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-02T03:14:26.293Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"紧急模式","level":"1.5.1","depth":2,"next":{"title":"风扇IPMI","level":"1.5.2","depth":2,"path":"yi-chang-chu-li/feng-shan-ipmi.md","ref":"yi-chang-chu-li/feng-shan-ipmi.md","articles":[]},"previous":{"title":"异常处理","level":"1.5","depth":1,"path":"yi-chang-chu-li.md","ref":"yi-chang-chu-li.md","articles":[{"title":"紧急模式","level":"1.5.1","depth":2,"path":"yi-chang-chu-li/jin-ji-mo-shi.md","ref":"yi-chang-chu-li/jin-ji-mo-shi.md","articles":[]},{"title":"风扇IPMI","level":"1.5.2","depth":2,"path":"yi-chang-chu-li/feng-shan-ipmi.md","ref":"yi-chang-chu-li/feng-shan-ipmi.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"yi-chang-chu-li/jin-ji-mo-shi.md","mtime":"2022-08-02T03:14:04.785Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-08-02T03:14:26.293Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
